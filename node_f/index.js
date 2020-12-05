@@ -111,7 +111,7 @@ const port = process.env.port || 8080;
 const host = "localhost";
 const app = express();
 //middleware
-app.use(express.static(__dirname + "/public"))
+app.use(express.static(__dirname + "/public/stylesheets"))
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"))
 app.get("/", (req, res) => {
